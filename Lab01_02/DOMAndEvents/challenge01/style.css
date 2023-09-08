@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Press+Start+2P&display=swap');
+
+:root {
+    --primary-color: #222;
+    --text-color: #eee;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+
+    font-size: 1.4rem;
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+.btn {
+    width: fit-content;
+    padding: 2rem 3rem;
+
+    font-family: inherit;
+    font-size: 2rem;
+
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    opacity: 0.7;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 35vh;
+
+    border-bottom: 0.7rem solid var(--text-color);
+}
+
+.header {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+section {
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+    padding-block: 3rem;
+    width: 15rem;
+
+    font-size: 6rem;
+    text-align: center;
+
+    background-color: var(--text-color);
+    color: var(--primary-color);
+
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 65vh;
+}
+
+.container-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input {
+    width: 25rem;
+    padding: 2.5rem;
+
+    background-color: var(--primary-color);
+    color: var(--text-color);
+
+    font-size: 5rem;
+    text-align: center;
+    font-family: inherit;
+
+    border: 0.4rem solid var(--text-color);
+    outline: none;
+}
+
+.check {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    font-size: 2rem;
+}
